@@ -1,0 +1,17 @@
+{
+    "name": "box/zendesk",
+    "description": "This is the second version of our PHP API client. The previous version of the API client can be found on the v1 branch.",
+    "type": "framework",
+    "license": "1.0.0",
+    "authors": [
+        {
+            "name": "Nguyen Quoc Truong",
+            "email": "truong.nq@aris-vn.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3@dev",
+        "mmucklo/inflect": "dev-master"
+    }
+}

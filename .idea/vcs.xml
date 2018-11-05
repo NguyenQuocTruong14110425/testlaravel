@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/lib/mypackage/box/zendesk/vendor/guzzlehttp/guzzle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/mypackage/box/zendesk/vendor/guzzlehttp/promises" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/mypackage/box/zendesk/vendor/guzzlehttp/psr7" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/mypackage/box/zendesk/vendor/mmucklo/inflect" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/mypackage/box/zendesk/vendor/psr/http-message" vcs="Git" />
+  </component>
+</project>

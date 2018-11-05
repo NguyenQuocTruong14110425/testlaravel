@@ -1,0 +1,17 @@
+{
+    "name": "box/laravel",
+    "description": "description",
+    "type": "project",
+    "require-dev": {
+        "laravel/laravel": "dev-master"
+    },
+    "license": "1.0.0",
+    "authors": [
+        {
+            "name": "Nguyen Quoc Truong",
+            "email": "truong.nq@aris-vn.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

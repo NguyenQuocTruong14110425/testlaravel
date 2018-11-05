@@ -1,0 +1,361 @@
+html, body {
+    background-color: #fff;
+    color: #000;
+    font-family:  sans-serif;
+    font-weight: 400;
+    height: 100vh;
+    margin: 0;
+    font-size: 85%;
+}
+.container
+{
+    margin-top: 100px;
+}
+.form-control
+{
+    color: #1b1e21;
+    border-radius: 10px;
+    font-weight: 400;
+}
+#form-chat
+{
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    right: 100px;
+    width: 350px;
+    max-height: 600px;
+    border-radius: 15px 15px 0 0;
+    border:1px solid #3f9ae5;
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(153,148,153,1);
+    -moz-box-shadow: 3px 3px 10px 0px rgba(153,148,153,1);
+    box-shadow: 3px 3px 10px 0px rgba(153,148,153,1);
+    overflow: hidden;
+}
+#form-chat #name
+{
+    position: relative;
+    padding: 10px;
+    background: #3f9ae5;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+    display: inline-block;
+    min-height: 50px;
+}
+#form-chat #name .btn-close
+{
+    background: #fff;
+    color: #3f9ae5;
+    position: absolute;
+    z-index: 10;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 0;
+}
+#form-chat #name .btn-close:hover,
+#form-chat #name .btn-close:focus
+{
+    background: #fafafa;
+    color: #3385ff;
+}
+#form-chat #name p
+{
+    color: #fff;
+    float: left;
+    margin: 0;
+    cursor: default;
+}
+#form-chat #name .input-edit
+{
+    position: relative;
+    display: flex;
+}
+#form-chat #name .input-edit input
+{
+    height: 40px;
+    width: 180px;
+}
+#form-chat #name .input-edit button
+{
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    color: #3f9ae5;
+    margin-left:5px;
+    padding: 0;
+    font-size: 20px;
+}
+#form-chat #name .online
+{
+    content: 'x';
+    position: absolute;
+    z-index: 10;
+    top:15px;
+    right: 10px;
+}
+#form-chat #name .online
+{
+    width: 15px;
+    height: 15px;
+    background: #00cc00;
+    border-radius: 50%;
+    float: right;
+    position: absolute;
+    z-index: 10;
+    right: 50px;
+    top:15px;
+}
+#form-chat #name .offline
+{
+    width: 15px;
+    height: 15px;
+    background: #a6a6a6;
+    border-radius: 50%;
+    float: right;
+    position: absolute;
+    z-index: 10;
+    right: 50px;
+    top:15px;
+}
+#form-chat #name .away
+{
+    width: 15px;
+    height: 15px;
+    background: #e68a00;
+    border-radius: 50%;
+    float: right;
+    position: absolute;
+    z-index: 10;
+    right: 50px;
+    top:15px;
+}
+#comment,
+#chat-mess,
+#btn-close
+{
+    display: none;
+}
+.message
+{
+    position: relative;
+    min-height: 280px;
+    max-height: 350px;
+    overflow-y: scroll;
+    margin-top: 15px;
+    padding: 10px;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    border-radius:10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.message .mess-1
+{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.message .mess-2
+{
+    position: relative;
+    float: right;
+    width: 100%;
+}
+.message .mess-1 p
+{
+    z-index: 99;
+    width: fit-content;
+    background: #3f9ae5;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.message .mess-2 p
+{
+    position: relative;
+    z-index: 99;
+    width: fit-content;
+    background: #5a6268;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    float: right;
+}
+
+.message .mess-2 span
+{
+    color: #5a6268;
+    float: right;
+    font-weight: 400;
+    padding: 10px;
+}
+.message .status-mess
+{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.message .status-mess p
+{
+    color: #595959;
+}
+.btn-success
+{
+    background: #3f9ae5;
+    color: #fff !important;
+}
+.btn-ratting
+{
+    background: #ff66ff;
+    color: #fff !important;
+    border:1px solid #fff !important;
+}
+.btn-upload
+{
+    background: #3f9ae5;
+    color: #fff !important;
+    border:1px solid #fff !important;
+}
+.btn-emoji
+{
+    background: #3f9ae5;
+    color: #fff !important;
+    border:1px solid #fff !important;
+}
+.emoji
+{
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    width: 85%;
+    bottom: 50px;
+    left: 0;
+    height: 330px;
+    background: #fff;
+    border:1px solid #3333;
+    -webkit-box-shadow: 2px -2px 5px 0px rgba(117,117,117,1);
+    -moz-box-shadow: 2px -2px 5px 0px rgba(117,117,117,1);
+    box-shadow: 2px -2px 5px 0px rgba(117,117,117,1);
+}
+.emoji .lst-emoji
+{
+    position: relative;
+    float: left;
+    display: inline-grid;
+    border-right: 1px solid #3f9ae5;
+    background: #fff;
+    width: 50px;
+    height: 330px;
+    overflow:hidden;
+}
+.emoji .lst-emoji .btn-icon
+{
+    background: none;
+    border-bottom: 1px solid #3f9ae5;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+}
+.emoji .lst-emoji .btn-icon:hover,
+.emoji .lst-emoji .btn-icon:focus
+{
+    background: #3f9ae5;
+    color: #fff;
+}
+.emoji .dashboard-emoji
+{
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+    height: 320px;
+    overflow-y: scroll;
+}
+.emoji .dashboard-emoji li
+{
+    list-style: none;
+    padding: 5px
+}
+.emoji .dashboard-emoji li button
+{
+    height: 40px;
+    width: 40px;
+    background: none;
+    padding: 0;
+    font-size: 25px;
+}
+.input-group
+{
+    padding: 15px;
+    border-top:1px solid #6666;
+    margin-bottom: 10px;
+}
+#chat-mess
+{
+    margin-bottom: 30px;
+}
+.message  .mss-group
+{
+    position: relative;
+    z-index: 99;
+    width: 100%;
+}
+.disable
+{
+    cursor: not-allowed;
+    background: #a6a6a6;
+}
+.message  .mss-group .option
+{
+    background: #5a6268;
+    width: fit-content;
+    display: grid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: right;
+    margin-bottom: 15px;
+    float: right;
+    color: #fff;
+}
+.message  .mss-group .option p
+{
+    position: relative;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.message  .mss-group .option .form-check
+{
+    position: relative;
+    float: right;
+    display: flex;
+}
+.message  .mss-group .option .form-check label
+{
+    color: #fff;
+    padding: 3px 7px;
+}
+input[type=checkbox], input[type=radio]
+{
+    width: 20px;
+    height: 20px;
+}
